@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\assets\\scripts\\flowercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flowercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\BubblePlatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\hellgarden\\hellgarden\\assets\\scripts\\theplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\theplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\CharacterMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\hellgarden\\hellgarden\\assets\\scripts\\thisismyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\thisismyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\assets\\scripts\\foranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\foranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThePlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThePlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ThePlayer.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThePlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ThePlayer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T20:02:39.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForAnimation.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ForAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ForAnimation.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ForAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ForAnimation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T18:58:47.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BubblePlatform.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\BubblePlatform.cs",
+              "RelativeDocumentMoniker": "..\\..\\MutationGame\\MutationGame\\Assets\\Script\\BubblePlatform.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\BubblePlatform.cs",
+              "RelativeToolTip": "..\\..\\MutationGame\\MutationGame\\Assets\\Script\\BubblePlatform.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEkAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T18:37:12.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FlowerCode.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\FlowerCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FlowerCode.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\FlowerCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FlowerCode.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:17:51.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CharacterMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\CharacterMovement.cs",
+              "RelativeDocumentMoniker": "..\\..\\MutationGame\\MutationGame\\Assets\\Script\\CharacterMovement.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\CharacterMovement.cs",
+              "RelativeToolTip": "..\\..\\MutationGame\\MutationGame\\Assets\\Script\\CharacterMovement.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:51:36.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ThisIsMyItem.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThisIsMyItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ThisIsMyItem.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThisIsMyItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ThisIsMyItem.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwCoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:10:28.653Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
