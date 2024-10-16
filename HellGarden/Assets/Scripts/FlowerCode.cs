@@ -58,15 +58,12 @@ public class FlowerCode : MonoBehaviour
 
         if (FlowerStage == 0)
         {
-            Debug.Log(FlowerHealth);
         }
         else if (FlowerStage == 1)
         {
-            Debug.Log(FlowerHealth);
         }
         else if (FlowerStage == 2)
         {
-            Debug.Log(FlowerHealth);
         }
 
     }

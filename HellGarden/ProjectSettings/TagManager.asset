@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - WaterAdaquareCanCollider
+  - ThePlanet
+  - BlackHole
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Item
   - Water
   - UI
   - 

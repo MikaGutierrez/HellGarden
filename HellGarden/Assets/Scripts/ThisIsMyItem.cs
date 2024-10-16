@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ThisIsMyItem : MonoBehaviour
@@ -8,6 +9,7 @@ public class ThisIsMyItem : MonoBehaviour
     private Vector3 offset;
     private Vector3 startPosition;
     [Header("InsideObjects")]
+    public bool UseInsideObjects = true;
     public GameObject InsideObjects;
     [Header("Animation Parametrs")]
     public bool UseAnimations;
@@ -18,7 +20,10 @@ public class ThisIsMyItem : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        InsideObjects.SetActive(false);
+        if (UseInsideObjects == true)
+        {
+            InsideObjects.SetActive(false);
+        }
         startPosition = transform.position;
     }
     private void Update()
@@ -27,7 +32,19 @@ public class ThisIsMyItem : MonoBehaviour
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
-
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
+        {
+            if (UseAnimations == true)
+            {
+                ObjectAnimator.Play(AnimatorIdleName);
+            }
+            if (UseInsideObjects == true)
+            {
+                InsideObjects.SetActive(false);
+            }
+            transform.position = startPosition;
+            dragging = false;
+        }
     }
 
     private void OnMouseDown()
@@ -36,7 +53,10 @@ public class ThisIsMyItem : MonoBehaviour
         {
             ObjectAnimator.Play(AnimatorOnMouseDownName);
         }
-        InsideObjects.SetActive(true);
+        if (UseInsideObjects == true)
+        {
+            InsideObjects.SetActive(true);
+        }
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         dragging = true;
     }
@@ -46,7 +66,10 @@ public class ThisIsMyItem : MonoBehaviour
         {
             ObjectAnimator.Play(AnimatorIdleName);
         }
-        InsideObjects.SetActive(false);
+        if (UseInsideObjects == true)
+        {
+            InsideObjects.SetActive(false);
+        }
         transform.position = startPosition;
         dragging = false;
     }
