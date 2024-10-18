@@ -386,6 +386,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/BlackHole.cs"
 "Assets/Scripts/Flower/BlackHoleFlower.cs"
+"Assets/Scripts/Flower/FrogFlower.cs"
 "Assets/Scripts/FlowerCode.cs"
 "Assets/Scripts/ForAnimation.cs"
 "Assets/Scripts/Leika.cs"
@@ -394,6 +395,7 @@
 "Assets/Scripts/PlanetSpawner.cs"
 "Assets/Scripts/ThePlayer.cs"
 "Assets/Scripts/ThisIsMyItem.cs"
+"Assets/Scripts/ThisIsMyItemMod.cs"
 -langversion:9.0
 /deterministic
 /optimize+
