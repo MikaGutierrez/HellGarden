@@ -5,9 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(CircleCollider2D), typeof(CircleCollider2D))]
 public class BlackHole : MonoBehaviour
 {
-    [Range(0.1f, 50f)]
+    [Range(0.1f, 100f)]
     public float gravitation = 0.45f;
-    [Range(4, 50)]
+    [Range(0.1f, 50)]
     public float gravitationRadius = 11f;
     [Range(0f, 10f)]
     public float rotationSpeed = 0.9f;

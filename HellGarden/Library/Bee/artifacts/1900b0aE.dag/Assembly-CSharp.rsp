@@ -389,13 +389,17 @@
 "Assets/Scripts/Flower/FrogFlower.cs"
 "Assets/Scripts/FlowerCode.cs"
 "Assets/Scripts/ForAnimation.cs"
+"Assets/Scripts/HollForPimpochka.cs"
 "Assets/Scripts/Leika.cs"
 "Assets/Scripts/LocacMassCenter.cs"
 "Assets/Scripts/PlaneHeatl.cs"
 "Assets/Scripts/PlanetSpawner.cs"
+"Assets/Scripts/RopeLine.cs"
 "Assets/Scripts/ThePlayer.cs"
 "Assets/Scripts/ThisIsMyItem.cs"
 "Assets/Scripts/ThisIsMyItemMod.cs"
+"Assets/Scripts/ThisIsMyItemPlugIt.cs"
+"Assets/Scripts/Tomato.cs"
 -langversion:9.0
 /deterministic
 /optimize+

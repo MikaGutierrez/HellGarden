@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BlackHoleFlower : MonoBehaviour
 {
+    [Header("ChangeGameObjects")]
+    public GameObject Stage1;
+    public GameObject Stage2;
+    public GameObject Stage3;
     [Header("Flower Health")]
     public float FlowerHealth;
     public float MaxFlowerHealth = 100;
@@ -25,6 +29,9 @@ public class BlackHoleFlower : MonoBehaviour
     }
     void Start()
     {
+        Stage1.SetActive(false);
+        Stage2.SetActive(false);
+        Stage3.SetActive(false);
         StartCoroutine(GiveHearts());
     }
 
@@ -58,12 +65,21 @@ public class BlackHoleFlower : MonoBehaviour
 
         if (FlowerStage == 0)
         {
+            Stage1.SetActive(true);
+            Stage2.SetActive(false);
+            Stage3.SetActive(false);
         }
         else if (FlowerStage == 1)
         {
+            Stage1.SetActive(false);
+            Stage2.SetActive(true);
+            Stage3.SetActive(false);
         }
         else if (FlowerStage == 2)
         {
+            Stage1.SetActive(false);
+            Stage2.SetActive(false);
+            Stage3.SetActive(true);
         }
 
     }

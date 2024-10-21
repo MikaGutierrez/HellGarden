@@ -280,7 +280,7 @@ MonoBehaviour:
   MaxFlowerHealth: 100
   MinFlowerHealth: 0
   FlowerStage: 0
-  FlowerHealthLooseSpeed: 5
+  FlowerHealthLooseSpeed: 3
   LeikaPower: 10
   SecondsToGetHeart: 2
 --- !u!50 &5537121205453540003

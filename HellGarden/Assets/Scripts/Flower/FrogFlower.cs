@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class FrogFlower : MonoBehaviour
 {
+    [Header("ChangeGameObjects")]
+    public SpriteRenderer FrogRenderer;
+    public Sprite Stage1;
+    public Sprite Stage2;
+    public Sprite Stage3;
     [Header("Flower Health")]
     public float FlowerHealth = 100;
     public float MaxFlowerHealth = 100;
@@ -25,7 +30,7 @@ public class FrogFlower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ThisIsMyItemMod.TriggerIt == true)
+        if (ThisIsMyItemMod.TriggerIt == true && ThisIsMyItemPlugIt.IsPluged == true)
         {
             ThisIsMyItemMod.TriggerIt = false;
             FlowerHealth += ThisIsMyItemMod.PositionParametrNow;
@@ -65,12 +70,15 @@ public class FrogFlower : MonoBehaviour
 
         if (FlowerStage == 0)
         {
+            FrogRenderer.sprite = Stage1;
         }
         else if (FlowerStage == 1)
         {
+            FrogRenderer.sprite = Stage2;
         }
         else if (FlowerStage == 2)
         {
+            FrogRenderer.sprite = Stage3;
         }
 
     }

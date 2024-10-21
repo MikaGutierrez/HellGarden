@@ -35,7 +35,7 @@ public class ThisIsMyItemMod : MonoBehaviour
     }
     private void Update()
     {
-        PositionParametr = (transform.position.y + 1.8f) * 7;
+        PositionParametr = (transform.position.y + 1.11f) * 7;
 
         if (PositionParametrNow < PositionParametr)
         {
@@ -43,21 +43,21 @@ public class ThisIsMyItemMod : MonoBehaviour
         }
 
 
-        if (dragging == true && transform.position.y <= 1.7f && transform.position.y >= -1.8f)
+        if (dragging == true && transform.position.y <= 1.7f && transform.position.y >= -1.55f)
         {
             transform.position = new Vector2(transform.position.x, offset.y + Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
         }
 
         if (transform.position.y > 1.7f)
         {
-            transform.position = new Vector2(transform.position.x, 1.7f);
+            transform.position = new Vector2(transform.position.x, 1.69f);
         }
-        else if (transform.position.y < -1.8f)
+        else if (transform.position.y < -1.55f)
         {
-            transform.position = new Vector2(transform.position.x, -1.8f);
+            transform.position = new Vector2(transform.position.x, -1.54f);
         }
 
-        if (transform.position.y <= -1.8f && LookAtIt == false)
+        if (transform.position.y <= -1.11f && LookAtIt == false)
         {
             TriggerIt = true;
             IsUp = false;
@@ -66,7 +66,7 @@ public class ThisIsMyItemMod : MonoBehaviour
         {
             IsUp = true;
         }
-        if (transform.position.y > -1.8f)
+        if (transform.position.y > -1.11f)
         {
             LookAtIt = false;
         }
