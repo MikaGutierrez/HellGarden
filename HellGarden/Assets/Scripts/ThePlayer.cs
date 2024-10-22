@@ -23,6 +23,7 @@ public class ThePlayer : MonoBehaviour
     public GameObject SpawnPosition;
     public GameObject Camera;
     public GameObject ChooseFlowersPanel;
+    public GameObject WallRigght;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,6 +75,7 @@ public class ThePlayer : MonoBehaviour
         ChoosedFlower = NextFlower1;
         FindDublicity();
         ChooseFlowersPanel.SetActive(false);
+        WallRigght.transform.position += new Vector3(17.76f, 0, 0);
     }
     public void CreateAPlant2()
     {
@@ -84,6 +86,7 @@ public class ThePlayer : MonoBehaviour
         ChoosedFlower = NextFlower2;
         FindDublicity();
         ChooseFlowersPanel.SetActive(false);
+        WallRigght.transform.position += new Vector3(17.76f, 0, 0);
     }
 
     public void FindDublicity()

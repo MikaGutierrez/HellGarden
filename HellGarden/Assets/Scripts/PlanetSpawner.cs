@@ -22,7 +22,7 @@ public class PlanetSpawner : MonoBehaviour
 
     private IEnumerator SpawnThem()
     {
-        yield return new WaitForSeconds(Random.Range(0.5f, 2));
+        yield return new WaitForSeconds(Random.Range(0.5f, 1));
         if (ForAnimation.TheUltimateBool == true)
         { 
         Instantiate(Planets[Random.Range(0, Planets.Length)], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));

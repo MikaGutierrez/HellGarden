@@ -3,15 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\hellgarden\\hellgarden\\assets\\scripts\\tomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\hellgarden\\hellgarden\\assets\\scripts\\theplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\theplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\assets\\scripts\\tomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\assets\\scripts\\falltomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\falltomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\assets\\scripts\\thisismyitemmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\thisismyitemmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\hellgarden\\hellgarden\\assets\\scripts\\flower\\frogflower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\hellgarden\\hellgarden\\assets\\scripts\\badtomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\badtomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\hellgarden\\hellgarden\\assets\\scripts\\planetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\assets\\scripts\\flower\\frogflower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1863972-006F-B3E4-68EA-6B077C891F00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flower\\frogflower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,40 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ThePlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThePlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ThePlayer.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThePlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ThePlayer.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAYwFgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T23:14:05.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BadTomato.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\BadTomato.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BadTomato.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\BadTomato.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BadTomato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T22:36:56.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThisIsMyItemMod.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThisIsMyItemMod.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ThisIsMyItemMod.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThisIsMyItemMod.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ThisIsMyItemMod.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwF0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:09:54.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FallTomato.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\FallTomato.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FallTomato.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\FallTomato.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FallTomato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:45:23.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlanetSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\PlanetSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlanetSpawner.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\PlanetSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlanetSpawner.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:31:39.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Tomato.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\Tomato.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tomato.cs",
               "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\Tomato.cs",
               "RelativeToolTip": "Assets\\Scripts\\Tomato.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCYAAAA6AAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAmwFYAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T20:53:05.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "FrogFlower.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\Flower\\FrogFlower.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Flower\\FrogFlower.cs",
               "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\Flower\\FrogFlower.cs",
               "RelativeToolTip": "Assets\\Scripts\\Flower\\FrogFlower.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCAAAABUAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T20:12:16.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ThisIsMyItemMod.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThisIsMyItemMod.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ThisIsMyItemMod.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\HellGarden\\HellGarden\\Assets\\Scripts\\ThisIsMyItemMod.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ThisIsMyItemMod.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAYwFEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T20:09:54.055Z",
               "EditorCaption": ""
             }
           ]

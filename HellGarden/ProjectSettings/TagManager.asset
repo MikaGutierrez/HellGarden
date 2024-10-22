@@ -9,6 +9,9 @@ TagManager:
   - BlackHole
   - PlugInCollider
   - ToPlug
+  - Knife
+  - TheItem
+  - Ground
   layers:
   - Default
   - TransparentFX
