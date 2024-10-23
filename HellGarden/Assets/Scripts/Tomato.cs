@@ -18,6 +18,9 @@ public class Tomato : MonoBehaviour
     public GameObject TomatoDone;
     public GameObject TomatoBad;
     public Animator ObjectAnimator;
+    [Header("Paricles")]
+    public GameObject[] Hearts;
+    public GameObject[] BroukenHearts;
     // Start is called before the first frame update
     void Start()
     {
@@ -73,7 +76,7 @@ public class Tomato : MonoBehaviour
             ObjectAnimator.Play("TomatoBad");
             sr.sprite = Sprite3;
         }
-        else if (TomatoLifeTime >= 40)
+        else if (TomatoLifeTime >= 35)
         {
             Instantiate(TomatoBad, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0f));
             TomatoLifeTime = 0;
@@ -84,15 +87,18 @@ public class Tomato : MonoBehaviour
         yield return new WaitForSeconds(4);
         if (State == 1)
         {
+            Instantiate(Hearts[Random.Range(0, Hearts.Length)], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
             yield return new WaitForSeconds(3);
             ThePlayer.Hears += 1;
         }
         else if (State == 2)
         {
+            Instantiate(Hearts[Random.Range(0, Hearts.Length)], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
             ThePlayer.Hears += 1;
         }
         else if (State == 3)
         {
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
             yield return new WaitForSeconds(3);
             ThePlayer.Hears -= 1;
         }

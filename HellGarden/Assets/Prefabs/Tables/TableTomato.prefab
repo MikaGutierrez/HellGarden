@@ -953,6 +953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato
       objectReference: {fileID: 0}
+    - target: {fileID: 5524659803213204984, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
+      propertyPath: TomatoLifeTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8054637210600065536, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.71
@@ -1014,6 +1018,10 @@ PrefabInstance:
     - target: {fileID: 1217420413089272326, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_Name
       value: Tomato 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524659803213204984, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
+      propertyPath: TomatoLifeTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8054637210600065536, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1077,6 +1085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5524659803213204984, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
+      propertyPath: TomatoLifeTime
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8054637210600065536, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.76
@@ -1138,6 +1150,10 @@ PrefabInstance:
     - target: {fileID: 1217420413089272326, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_Name
       value: Tomato 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524659803213204984, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
+      propertyPath: TomatoLifeTime
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8054637210600065536, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1201,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5524659803213204984, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
+      propertyPath: TomatoLifeTime
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8054637210600065536, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.33
@@ -1262,6 +1282,10 @@ PrefabInstance:
     - target: {fileID: 1217420413089272326, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_Name
       value: Tomato 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524659803213204984, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
+      propertyPath: TomatoLifeTime
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8054637210600065536, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1386,6 +1410,10 @@ PrefabInstance:
     - target: {fileID: 1217420413089272326, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_Name
       value: Tomato 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524659803213204984, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
+      propertyPath: TomatoLifeTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8054637210600065536, guid: 7be18d8011284c84aba3fcc2229d2452, type: 3}
       propertyPath: m_LocalPosition.x

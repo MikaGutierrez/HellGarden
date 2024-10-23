@@ -87,6 +87,10 @@ public class FrogFlower : MonoBehaviour
         yield return new WaitForSeconds(SecondsToGetHeart);
         if (FlowerStage == 2)
         {
+            ThePlayer.Hears -= 3;
+        }
+        else if (FlowerStage == 1)
+        {
             ThePlayer.Hears -= 1;
         }
         else if (FlowerStage == 0)

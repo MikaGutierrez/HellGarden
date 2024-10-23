@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ThePlayer : MonoBehaviour
 {
     [Header("PlayerStats")]
     public static int Hears = 1;
+    public int MaxHealth = 1;
     public float NextPosition = 17.76f;
     public int FlowerCounter = 0;
     public int FlowerCurrent = 0;
     public int HeartsThatPlayerNeed = 20;
     public int[] HeartsThatPlayerNeedList;
     private int HeartsThatPlayerNeedNow = 0;
+    private bool IsGameStoped = false;
     [Header("Flowers")]
     public List<GameObject> AllFllowers;
     public GameObject NextFlower1;
@@ -20,14 +23,20 @@ public class ThePlayer : MonoBehaviour
     public GameObject ChoosedFlower;
     [Header("ObjectsForPlayer")]
     public Text TextHearCounter;
+    public Text TextMaxHear;
     public GameObject SpawnPosition;
     public GameObject Camera;
-    public GameObject ChooseFlowersPanel;
     public GameObject WallRigght;
+    [Header("ObjectsForPlayer")]
+    public GameObject ChooseFlowersPanel;
+    public GameObject DeadPanel;
+    public GameObject StopPanel;
     // Start is called before the first frame update
     void Start()
     {
+        StopPanel.SetActive(false);
         ChooseFlowersPanel.SetActive(false);
+        DeadPanel.SetActive(false);
         FindDublicity();
         NextFlower1 = AllFllowers[Random.Range(0, AllFllowers.Count)];
         NextFlower2 = AllFllowers[Random.Range(0, AllFllowers.Count)];
@@ -36,7 +45,17 @@ public class ThePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Hears >= HeartsThatPlayerNeed)
+        if (Hears > MaxHealth)
+        {
+            MaxHealth = Hears;
+        }
+        if (Hears <= 0)
+        {
+            DeadPanel.SetActive(true);
+        }
+
+
+        if (Hears >= HeartsThatPlayerNeed && FlowerCounter < 4)
         {
             Time.timeScale = 0f;
             HeartsThatPlayerNeedNow += 1;
@@ -46,7 +65,8 @@ public class ThePlayer : MonoBehaviour
 
 
 
-        TextHearCounter.text = "Hears:" + Hears;
+        TextMaxHear.text = "" + MaxHealth;
+        TextHearCounter.text = " " + Hears;
 
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -62,6 +82,21 @@ public class ThePlayer : MonoBehaviour
             {
                 FlowerCurrent += 1;
                 Camera.transform.position += new Vector3(17.76f, 0, 0);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (IsGameStoped == false)
+            {
+                Time.timeScale = 0f;
+                IsGameStoped = true;
+                StopPanel.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                IsGameStoped = false;
+                StopPanel.SetActive(false);
             }
         }
     }
@@ -102,5 +137,27 @@ public class ThePlayer : MonoBehaviour
         NextFlower2 = AllFllowers[Random.Range(0, AllFllowers.Count)];
     }
 
+
+    public void RestartClick()
+    {
+        Hears = 1;
+        ChooseFlowersPanel.SetActive(false);
+        SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1f;
+    }
+
+    public void RestartExit()
+    {
+        Hears = 1;
+        ChooseFlowersPanel.SetActive(false);
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+    }
+    public void ReturnToTheGame()
+    {
+        IsGameStoped = false;
+        StopPanel.SetActive(false);
+        Time.timeScale = 1f;
+    }
 
 }

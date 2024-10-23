@@ -221,6 +221,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 5028706595577230985, guid: 19eabe305729fa5418d2e855b5e43204, type: 3}
   self: {fileID: 7030554697371634243}
+  BroukenHearts:
+  - {fileID: 5028706595577230985, guid: dfa93dfc6304e9948b2bff41443de9cf, type: 3}
+  - {fileID: 5028706595577230985, guid: 69c3eef052c39bb42943dff74184e8ff, type: 3}
+  - {fileID: 5028706595577230985, guid: c7b75ade22f2f3a49af782cb6537bdb3, type: 3}
 --- !u!1 &7030554697371634243
 GameObject:
   m_ObjectHideFlags: 0

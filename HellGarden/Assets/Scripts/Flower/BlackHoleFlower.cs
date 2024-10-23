@@ -17,6 +17,9 @@ public class BlackHoleFlower : MonoBehaviour
     [Header("OtherStates")]
     public float PlanertFood = 14;
     public float SecondsToGetHeart = 2;
+    [Header("Paricles")]
+    public GameObject[] Hearts;
+    public GameObject[] BroukenHearts;
     // Start is called before the first frame update
 
 
@@ -88,11 +91,24 @@ public class BlackHoleFlower : MonoBehaviour
         yield return new WaitForSeconds(SecondsToGetHeart);
         if (FlowerStage == 2)
         {
-            ThePlayer.Hears -= 1;
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 4.776672f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 4.776672f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 4.776672f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 4.776672f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            ThePlayer.Hears -= 4;
+        }
+        else if (FlowerStage == 1)
+        {
+            yield return new WaitForSeconds(2);
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 4.776672f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 4.776672f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            ThePlayer.Hears -= 2;
         }
         else if (FlowerStage == 0)
         {
-            ThePlayer.Hears += 1;
+            Instantiate(Hearts[Random.Range(0, Hearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(Hearts[Random.Range(0, Hearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            ThePlayer.Hears += 2;
         }
         StartCoroutine(GiveHearts());
 

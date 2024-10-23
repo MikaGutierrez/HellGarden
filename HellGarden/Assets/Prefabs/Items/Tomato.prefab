@@ -144,6 +144,14 @@ MonoBehaviour:
   TomatoDone: {fileID: 7030554697371634243, guid: ee8574c1f367caf419db25a47cd79836, type: 3}
   TomatoBad: {fileID: 7030554697371634243, guid: 63dc9334a059df64fa52b97424a38dce, type: 3}
   ObjectAnimator: {fileID: 4669130263471744114}
+  Hearts:
+  - {fileID: 5028706595577230985, guid: dfa93dfc6304e9948b2bff41443de9cf, type: 3}
+  - {fileID: 5028706595577230985, guid: 69c3eef052c39bb42943dff74184e8ff, type: 3}
+  - {fileID: 5028706595577230985, guid: c7b75ade22f2f3a49af782cb6537bdb3, type: 3}
+  BroukenHearts:
+  - {fileID: 5028706595577230985, guid: 655d9cadbb8d0e343820112f7557d5b1, type: 3}
+  - {fileID: 5028706595577230985, guid: c78d651bed7f6014c8d1cbbcd47d8d75, type: 3}
+  - {fileID: 5028706595577230985, guid: b43fb1f6124d76b4a957ace88fa9ced3, type: 3}
 --- !u!95 &4669130263471744114
 Animator:
   serializedVersion: 5

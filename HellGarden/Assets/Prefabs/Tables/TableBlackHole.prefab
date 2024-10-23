@@ -646,7 +646,15 @@ MonoBehaviour:
   FlowerStage: 0
   FlowerHealthLooseSpeed: 5
   PlanertFood: 5
-  SecondsToGetHeart: 2
+  SecondsToGetHeart: 1
+  Hearts:
+  - {fileID: 5028706595577230985, guid: dfa93dfc6304e9948b2bff41443de9cf, type: 3}
+  - {fileID: 5028706595577230985, guid: 69c3eef052c39bb42943dff74184e8ff, type: 3}
+  - {fileID: 5028706595577230985, guid: c7b75ade22f2f3a49af782cb6537bdb3, type: 3}
+  BroukenHearts:
+  - {fileID: 5028706595577230985, guid: 655d9cadbb8d0e343820112f7557d5b1, type: 3}
+  - {fileID: 5028706595577230985, guid: c78d651bed7f6014c8d1cbbcd47d8d75, type: 3}
+  - {fileID: 5028706595577230985, guid: b43fb1f6124d76b4a957ace88fa9ced3, type: 3}
 --- !u!1 &4652318450510572249
 GameObject:
   m_ObjectHideFlags: 0
