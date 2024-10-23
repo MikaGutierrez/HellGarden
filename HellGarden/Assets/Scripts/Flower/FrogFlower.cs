@@ -18,6 +18,9 @@ public class FrogFlower : MonoBehaviour
     [Header("OtherStates")]
     public float PressPower = 19.5f;
     public float SecondsToGetHeart = 2;
+    [Header("Paricles")]
+    public GameObject[] Hearts;
+    public GameObject[] BroukenHearts;
     // Start is called before the first frame update
 
 
@@ -87,14 +90,19 @@ public class FrogFlower : MonoBehaviour
         yield return new WaitForSeconds(SecondsToGetHeart);
         if (FlowerStage == 2)
         {
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
             ThePlayer.Hears -= 3;
         }
         else if (FlowerStage == 1)
         {
+            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
             ThePlayer.Hears -= 1;
         }
         else if (FlowerStage == 0)
         {
+            Instantiate(Hearts[Random.Range(0, Hearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
             ThePlayer.Hears += 1;
         }
         StartCoroutine(GiveHearts());

@@ -24,6 +24,7 @@ public class ThePlayer : MonoBehaviour
     [Header("ObjectsForPlayer")]
     public Text TextHearCounter;
     public Text TextMaxHear;
+    public Text TextNextHears;
     public GameObject SpawnPosition;
     public GameObject Camera;
     public GameObject WallRigght;
@@ -31,9 +32,11 @@ public class ThePlayer : MonoBehaviour
     public GameObject ChooseFlowersPanel;
     public GameObject DeadPanel;
     public GameObject StopPanel;
+    public GameObject NextHearsPanel;
     // Start is called before the first frame update
     void Start()
     {
+        NextHearsPanel.SetActive(true);
         StopPanel.SetActive(false);
         ChooseFlowersPanel.SetActive(false);
         DeadPanel.SetActive(false);
@@ -63,8 +66,7 @@ public class ThePlayer : MonoBehaviour
             ChooseFlowersPanel.SetActive(true);
         }
 
-
-
+        TextNextHears.text = "" + HeartsThatPlayerNeed;
         TextMaxHear.text = "" + MaxHealth;
         TextHearCounter.text = " " + Hears;
 

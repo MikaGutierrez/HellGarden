@@ -76,7 +76,7 @@ public class Tomato : MonoBehaviour
             ObjectAnimator.Play("TomatoBad");
             sr.sprite = Sprite3;
         }
-        else if (TomatoLifeTime >= 35)
+        else if (TomatoLifeTime >= 32)
         {
             Instantiate(TomatoBad, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0f));
             TomatoLifeTime = 0;
