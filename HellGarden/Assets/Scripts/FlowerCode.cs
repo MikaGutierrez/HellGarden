@@ -71,7 +71,7 @@ public class FlowerCode : MonoBehaviour
         {
             FlowerStage = 1;
         }
-        else if (FlowerHealth < 40 && FlowerHealth > 0)
+        else if (FlowerHealth <= 40 && FlowerHealth > 0)
         {
             FlowerStage = 2;
         }

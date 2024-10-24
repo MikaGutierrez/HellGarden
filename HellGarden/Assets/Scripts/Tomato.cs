@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 
-public class Tomato : MonoBehaviour
+public class Tomato : Audio
 {
+    public AudioSource ass;
     public float TomatoLifeTime = 0;
     private int State = 0;
     public float SpeedOfHeaelth = 1;
@@ -24,12 +25,14 @@ public class Tomato : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ass.enabled = true;
         StartCoroutine(GiveHearts());
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Knife")
         {
+            PlaySounds(audioClips[0], p1: 0.9f, p2: 1f);
             if (State >= 1)
             {
                 TomatoLifeTime = 0;
@@ -56,22 +59,26 @@ public class Tomato : MonoBehaviour
 
         if (TomatoLifeTime < 10)
         {
+            ass.enabled = false;
             ObjectAnimator.Play("Tomato");
             State = 0;
             sr.sprite = SpriteNone;
         }
         else if (TomatoLifeTime >= 10 && TomatoLifeTime < 20)
         {
+            ass.enabled = true;
             State = 1;
             sr.sprite = Sprite1;
         }
         else if (TomatoLifeTime >= 20 && TomatoLifeTime < 30)
         {
+            ass.enabled = true;
             State = 2;
             sr.sprite = Sprite2;
         }
         else if (TomatoLifeTime >= 30 && TomatoLifeTime < 40)
         {
+            ass.enabled = false;
             State = 3;
             ObjectAnimator.Play("TomatoBad");
             sr.sprite = Sprite3;

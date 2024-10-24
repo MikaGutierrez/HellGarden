@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ice : MonoBehaviour
+public class Ice : Audio
 {
     private bool dragging = false;
     private Vector3 offset;
     private Vector3 startPosition;
 
     // Start is called before the first frame update
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "FireFlower")
+        {
+            PlaySounds(audioClips[1], p1: 0.6f, p2: 0.8f);
+        }
+    }
     private void Start()
     {
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -28,11 +35,13 @@ public class Ice : MonoBehaviour
 
     private void OnMouseDown()
     {
+        PlaySounds(audioClips[0], p1: 0.6f, p2: 0.8f);
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         dragging = true;
     }
     private void OnMouseUp()
     {
+        PlaySounds(audioClips[0], p1: 0.6f, p2: 0.8f);
         dragging = false;
     }
 

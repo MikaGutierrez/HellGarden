@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ThisIsMyItem : MonoBehaviour
+public class ThisIsMyItem : Audio
 {
     private bool dragging = false;
     private Vector3 offset;
@@ -49,6 +49,10 @@ public class ThisIsMyItem : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (UseAudio == true)
+        {
+            PlaySounds(audioClips[0], p1: 0.6f, p2: 0.8f);
+        }
         if (UseAnimations == true)
         {
             ObjectAnimator.Play(AnimatorOnMouseDownName);
@@ -62,6 +66,10 @@ public class ThisIsMyItem : MonoBehaviour
     }
     private void OnMouseUp()
     {
+        if (UseAudio == true)
+        {
+            PlaySounds(audioClips[0], p1: 0.8f, p2: 1f);
+        }
         if (UseAnimations == true)
         {
             ObjectAnimator.Play(AnimatorIdleName);

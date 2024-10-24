@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThisIsMyItemPlugIt : MonoBehaviour
+public class ThisIsMyItemPlugIt : Audio
 {
     public Sprite sprite1;
     public Sprite sprite2;
@@ -20,6 +20,7 @@ public class ThisIsMyItemPlugIt : MonoBehaviour
     public Animator ObjectAnimator;
     public string AnimatorOnMouseDownName;
     public string AnimatorIdleName;
+    private bool DidIt;
 
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collision)
@@ -47,6 +48,16 @@ public class ThisIsMyItemPlugIt : MonoBehaviour
     }
     private void Update()
     {
+        if (DidIt == true && IsPluged == true)
+        {
+            PlaySounds(audioClips[0], p1: 0.9f, p2: 1f);
+            DidIt = false;
+        }
+        if (IsPluged == false)
+        {
+            DidIt = true;
+        }
+
         if (dragging == true)
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;

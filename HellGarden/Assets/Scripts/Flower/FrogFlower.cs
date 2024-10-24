@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrogFlower : MonoBehaviour
+public class FrogFlower : Audio
 {
     [Header("ChangeGameObjects")]
     public SpriteRenderer FrogRenderer;
@@ -21,6 +21,7 @@ public class FrogFlower : MonoBehaviour
     [Header("Paricles")]
     public GameObject[] Hearts;
     public GameObject[] BroukenHearts;
+    private bool DidIt = false;
     // Start is called before the first frame update
 
 
@@ -35,10 +36,19 @@ public class FrogFlower : MonoBehaviour
     {
         if (ThisIsMyItemMod.TriggerIt == true && ThisIsMyItemPlugIt.IsPluged == true)
         {
+
+            PlaySounds(audioClips[0], p1: 0.9f, p2: 1f);
             ThisIsMyItemMod.TriggerIt = false;
             FlowerHealth += ThisIsMyItemMod.PositionParametrNow;
             Debug.Log(ThisIsMyItemMod.PositionParametrNow);
             ThisIsMyItemMod.PositionParametrNow = 0;
+            DidIt = true;
+        }
+        if (ThisIsMyItemMod.PositionParametrNow != 0 && DidIt == true && ThisIsMyItemPlugIt.IsPluged == true)
+        {
+
+            PlaySounds(audioClips[1], p1: 0.9f, p2: 1f);
+            DidIt = false;
         }
 
 
@@ -97,8 +107,6 @@ public class FrogFlower : MonoBehaviour
         }
         else if (FlowerStage == 1)
         {
-            Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 0f, 0f), Quaternion.Euler(0f, 0f, 0f));
-            ThePlayer.Hears -= 1;
         }
         else if (FlowerStage == 0)
         {

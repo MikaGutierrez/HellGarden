@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class ThisIsMyItemMod : MonoBehaviour
+public class ThisIsMyItemMod : MonoBehaviour 
 {
 
     private bool dragging = false;
@@ -23,6 +23,7 @@ public class ThisIsMyItemMod : MonoBehaviour
     public Animator ObjectAnimator;
     public string AnimatorOnMouseDownName;
     public string AnimatorIdleName;
+    private bool AlreadyDidIt = false;
 
     // Start is called before the first frame update
     private void Start()
@@ -73,6 +74,7 @@ public class ThisIsMyItemMod : MonoBehaviour
 
         if (TriggerIt == true)
         {
+            //PlaySounds(audioClips[0], p1: 0.9f, p2: 1f);
             LookAtIt = true;
         }
 
