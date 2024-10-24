@@ -12,6 +12,8 @@ TagManager:
   - Knife
   - TheItem
   - Ground
+  - FireExtinguisherCollider
+  - Ice
   layers:
   - Default
   - TransparentFX

@@ -47,7 +47,6 @@ public class ThisIsMyItemPlugIt : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(IsPluged);
         if (dragging == true)
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;

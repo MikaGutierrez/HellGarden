@@ -30,7 +30,7 @@ public class BadTomato : MonoBehaviour
 
     private IEnumerator GiveHearts()
     {
-        Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, 4.776672f, 0f), Quaternion.Euler(0f, 0f, 0f));
+        Instantiate(BroukenHearts[Random.Range(0, BroukenHearts.Length)], new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
         yield return new WaitForSeconds(3);
         ThePlayer.Hears -= 2;
         StartCoroutine(GiveHearts());
